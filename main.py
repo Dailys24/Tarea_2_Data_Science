@@ -2,6 +2,7 @@
 
 import pandas as pd
 
+#Hacer lo mismo de la semana Tarea 1 pero ahora con pandas
 #Calcular promedio de notas de cada alumno y promedio general del curso
 datos = [
     {"nombre": "Ana", "notas": [6.5, 7.0, 5.8]},
