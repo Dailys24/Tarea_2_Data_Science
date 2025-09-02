@@ -1,5 +1,3 @@
-#Datos
-
 datos = [
     {"nombre": "Ana", "notas": [6.5, 7.0, 5.8]},
     {"nombre": "Luis", "notas": [4.2, 5.1, 6.0]},
