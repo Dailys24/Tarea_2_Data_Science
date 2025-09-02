@@ -8,7 +8,7 @@ def problema1():
     df_alumnos = pd.DataFrame(datos)
 
     #Calcular el promedio de cada alumno
-    df_alumnos['promedio']=df_alumnos['notas'].apply(lambda x: sum(x) / len(x))
+    df_alumnos['promedio']=df_alumnos['notas'].apply(lambda notas: sum(notas) / len(notas))
 
     #Calcular el promedio general
     promedio_general=df_alumnos['promedio'].mean()
