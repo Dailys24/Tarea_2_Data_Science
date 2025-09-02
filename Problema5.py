@@ -2,14 +2,15 @@
 
 import pandas as pd 
 
-from Datos import datos #importa lista de diccionarios 
+from Datos import datos
 
 def problema5(): 
-    df_alumnos=pd.DataFrame(datos)
-    df_alumnos['promedio'] = df_alumnos['notas'].apply(lambda notas : sum(notas) / len (notas) )
-    df_ordenado = df_alumno[['nombre', 'promedio']].sort_values(by='promedio', ascending=False )
+    df_alumnos = pd.DataFrame(datos)
+    df_alumnos['promedio'] = df_alumnos['notas'].apply(lambda notas: sum(notas) / len(notas))
+    df_ordenado = df_alumnos[['nombre', 'promedio']].sort_values(by='promedio', ascending=False)
 
-    print("------------- Listado de estudiantes según promedio ----------------")
+    print("------------- Listado de estudiantes según promedio -------------")
     print(df_ordenado.round(1).to_string(index=False))
+
 
 
