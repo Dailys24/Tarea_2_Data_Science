@@ -7,19 +7,6 @@ import os
 from Datos import datos
 from Problema1 import problema1
 
-#Definimos las funciones para cada opción del menú
-#Estas funciones son simuladas, tendrías que reemplazarlas con tu lógica real
-def problema1():
-    #Filtra y muestra a los estudiantes que aprobaron (promedio >= 4.0).
-    df_alumnos = pd.DataFrame(datos)
-    df_alumnos['promedio'] = df_alumnos['notas'].apply(lambda x: sum(x) / len(x))
-    aprobados = df_alumnos[df_alumnos['promedio'] >= 4.0]
-    print("--- Estudiantes que Aprobaron ---")
-    if aprobados.empty:
-        print("No hay estudiantes que hayan aprobado.")
-    else:
-        print(aprobados[['nombre', 'promedio']].round(1).to_string(index=False))
-
 # unción principal que contiene el menú
 def main():
     while True:
