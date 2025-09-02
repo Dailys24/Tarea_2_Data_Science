@@ -6,6 +6,7 @@ import pandas as pd
 import os
 from Datos import datos
 from Problema1 import problema1
+from Problema2 import problema2
 
 # unción principal que contiene el menú
 def main():
@@ -36,13 +37,13 @@ def main():
             #Switch-case en Python (usamos un diccionario o if/elif/else)
             if op == 1:
                 print("------------------------------------------------------------------------------------")
-                problema1()  #Llamamos a la función del problema 1
+                problema1() #Llamamos a la función del problema 1
                 print("------------------------------------------------------------------------------------")
             
             elif op == 2:
                 print("------------------------------------------------------------------------------------")
                 print(" es:")
-                #Llamamos a la función del problema 2
+                problema2() #Llamamos a la función del problema 2
                 print("------------------------------------------------------------------------------------")
             elif op == 3:
                 print("------------------------------------------------------------------------------------")
