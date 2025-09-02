@@ -8,7 +8,7 @@ def problema2():
     df_alumnos = pd.DataFrame(datos)
 
     #Calcular el promedio de cada alumno
-    df_alumnos['promedio']=df_alumnos['notas'].apply(lambda x: sum(x) / len(x))
+    df_alumnos['promedio']=df_alumnos['notas'].apply(lambda notas: sum(notas) / len(notas))
 
     #Estudiantes con promedio >= 4.0
     aprobados=df_alumnos[df_alumnos['promedio'] >= 4.0]
