@@ -21,12 +21,14 @@ def main():
         print("****************************************************************************************")
         print("\n-----Tarea 2 Fundamentos de Data Science-----\n")
         print("------------- MENU -------------")
-        print("\n\u27a4 [1] Calcuar el promedio de notas y promedio mas alto y bajo.")
+        print("\n\u27a4 [1] Calcuar el promedio de notas de cada alumno.")
         print("\n\u27a4 [2] Filtrar estudiantes que aprobaron (promedio >= 4.0).")
         print("\n\u27a4 [3] Nota mas frecuente (moda) considerando todas las notas de todos los estudiantes.")
         print("\n\u27a4 [4] Porcentaje de estudiantes con al menos una nota bajo 4.0.")
         print("\n\u27a4 [5] Listado ordenado (de mayor a menor) de los estudiantes según su promedio.")
-        print("\n\u27a4 [6] Terminar")
+        print("\n\u27a4 [6] Calcular promedio general del curso.")
+        print("\n\u27a4 [7] Calcuar el promedio mas alto y bajo.")
+        print("\n\u27a4 [8] Terminar")
         print("\n****************************************************************************************")
 
         try:
