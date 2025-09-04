@@ -10,9 +10,5 @@ def problema1():
     #Calcular el promedio de cada alumno
     df_alumnos['promedio']=df_alumnos['notas'].apply(lambda notas: sum(notas) / len(notas))
 
-    #Promedio más alto y más bajo
-    alumno_nota_max=df_alumnos.loc[df_alumnos['promedio'].idxmax()]
-    alumno_nota_min=df_alumnos.loc[df_alumnos['promedio'].idxmin()]
-
     print("\n------------- Promedios -------------")
     print(df_alumnos[['nombre', 'promedio']].round(1))
