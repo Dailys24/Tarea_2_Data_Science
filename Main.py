@@ -67,12 +67,12 @@ def main():
             
             elif op == 6:
                 print("------------------------------------------------------------------------------------")
-                problema6() #Llamamos a la función del problema 5
+                problema6() #Llamamos a la función del problema 6
                 print("------------------------------------------------------------------------------------")
 
             elif op == 7:
                 print("------------------------------------------------------------------------------------")
-                problema7() #Llamamos a la función del problema 5
+                problema7() #Llamamos a la función del problema 7
                 print("------------------------------------------------------------------------------------")
             
             elif op == 8:
