@@ -10,6 +10,8 @@ from Problema2 import problema2
 from Problema3 import problema3
 from Problema4 import problema4
 from Problema5 import problema5
+from Problema6 import problema6
+from Problema7 import problema7
 
 # unción principal que contiene el menú
 def main():
@@ -34,7 +36,7 @@ def main():
         try:
             op = int(input("\nIngrese una opcion: "))
             
-            if op < 1 or op > 6:
+            if op < 1 or op > 8:
                 print("\n*** Opcion invalida. Porfavor digite nuevamente ***\n")
                 input("Presione Enter para continuar...")
                 continue #Vuelve al inicio del bucle
@@ -64,6 +66,16 @@ def main():
                 print("------------------------------------------------------------------------------------")
             
             elif op == 6:
+                print("------------------------------------------------------------------------------------")
+                problema6() #Llamamos a la función del problema 5
+                print("------------------------------------------------------------------------------------")
+
+            elif op == 7:
+                print("------------------------------------------------------------------------------------")
+                problema7() #Llamamos a la función del problema 5
+                print("------------------------------------------------------------------------------------")
+            
+            elif op == 8:
                 print("\n****Gracias por utilizar****")
                 break
 
